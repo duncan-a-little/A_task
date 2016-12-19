@@ -1,0 +1,275 @@
+Recall opt:
+
+	Report for LogisticRegression
+
+	accuracy:  0.708957820322
+	precision:  0.649913202534
+	recall:  0.849009786096
+	f1:  0.736238850494
+
+	Report for RandomForestClassifier
+
+	accuracy:  0.745506397651
+	precision:  0.710239965371
+	recall:  0.790676993475
+	f1:  0.748303091861
+
+	Report for LinearSVC
+
+	accuracy:  0.700207773967
+	precision:  0.635091403296
+	recall:  0.877718143493
+	f1:  0.736948347044
+
+	Optimal features and params:
+
+	LR:
+
+	no_returned_items
+	Refund
+	purchased_distinct
+	purchased_total
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_182_days
+	orders_last_92_days
+	orders_last_31_days
+	visits_last_182_days
+	visits_last_92_days
+
+	params: {'C': 0.001, 'class_weight': 'balanced'}
+
+	RF:
+
+	no_items_bought
+	total_spent
+	page_views
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_365_days
+	days_since_last_browse
+
+	params: {'min_samples_leaf': 3, 'criterion': 'entropy', 'bootstrap': True, 'min_samples_split': 2}
+
+	LinearSVC:
+
+	no_returned_items
+	Refund
+	purchased_distinct
+	purchased_total
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_182_days
+	orders_last_92_days
+	orders_last_31_days
+	visits_last_182_days
+	visits_last_92_days
+
+	params: {'C': 0.001, 'class_weight': 'balanced'}
+
+Precision opt:
+
+	Report for LogisticRegression
+
+	accuracy:  0.714513285719
+	precision:  0.665303854752
+	recall:  0.811559059472
+	f1:  0.731189557846
+
+	Report for RandomForestClassifier
+
+	accuracy:  0.748469157997
+	precision:  0.714217280059
+	recall:  0.790708120199
+	f1:  0.750518800244
+
+	Report for LinearSVC
+
+	accuracy:  0.712380011042
+	precision:  0.659206064339
+	recall:  0.825641997368
+	f1:  0.733096167446
+
+	Optimal features and params:
+
+	LR:
+
+	customer_age
+	no_items_bought
+	total_spent
+	no_returned_items
+	Refund
+	page_views
+	non_page_view_events
+	saved_for_l8r_prod
+	purchased_distinct
+	purchased_total
+	bought_return_ratio
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_182_days
+	orders_last_92_days
+	orders_last_31_days
+	spent_last_31_days
+	visits_last_182_days
+	visits_last_92_days
+	visits_last_31_days
+	total_site_visits
+
+	params: {'class_weight': None, 'C': 10}
+
+	RF:
+
+	customer_age
+	no_items_bought
+	total_spent
+	no_returned_items
+	Refund
+	Cancel
+	Replacement
+	Reject
+	page_views
+	non_page_view_events
+	saved_for_l8r_prod
+	saved_for_l8r_cat
+	purchased_distinct
+	purchased_total
+	bought_return_ratio
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_365_days
+	orders_last_182_days
+	orders_last_92_days
+	orders_last_31_days
+	spent_last_365_days
+	spent_last_182_days
+	spent_last_92_days
+	spent_last_31_days
+	days_since_last_browse
+	visits_last_365_days
+	visits_last_182_days
+	visits_last_92_days
+	visits_last_31_days
+	total_site_visits
+
+	params: {'min_samples_leaf': 1, 'bootstrap': True, 'criterion': 'gini', 'min_samples_split': 5}
+
+	LinearSVC:
+
+	customer_age
+	no_items_bought
+	total_spent
+	no_returned_items
+	Refund
+	Cancel
+	Replacement
+	page_views
+	non_page_view_events
+	saved_for_l8r_prod
+	saved_for_l8r_cat
+	purchased_distinct
+	purchased_total
+	bought_return_ratio
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_365_days
+	orders_last_182_days
+	orders_last_92_days
+	orders_last_31_days
+	spent_last_182_days
+	spent_last_31_days
+	visits_last_365_days
+	visits_last_182_days
+	visits_last_92_days
+	visits_last_31_days
+	total_site_visits
+
+	params: {'class_weight': None, 'C': 10}
+
+F1 Opt:
+
+	Report for LogisticRegression
+
+	accuracy:  0.708957820322
+	precision:  0.649913202534
+	recall:  0.849009786096
+	f1:  0.736238850494
+
+	Report for RandomForestClassifier
+
+	accuracy:  0.748622297308
+	precision:  0.714345584504
+	recall:  0.790877097332
+	f1:  0.750665757541
+
+	Report for LinearSVC
+
+	accuracy:  0.703593788802
+	precision:  0.640244500267
+	recall:  0.868446641118
+	f1:  0.73708683043
+
+	Optimal features and params:
+
+	LR:
+
+	no_returned_items
+	Refund
+	purchased_distinct
+	purchased_total
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_182_days
+	orders_last_92_days
+	orders_last_31_days
+	visits_last_182_days
+	visits_last_92_days
+
+	params: {'class_weight': 'balanced', 'C': 0.001}
+
+	RF:
+
+	customer_age
+	no_items_bought
+	total_spent
+	no_returned_items
+	Refund
+	Cancel
+	page_views
+	non_page_view_events
+	saved_for_l8r_prod
+	purchased_distinct
+	purchased_total
+	bought_return_ratio
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_365_days
+	orders_last_182_days
+	orders_last_92_days
+	spent_last_365_days
+	spent_last_182_days
+	spent_last_92_days
+	days_since_last_browse
+	visits_last_365_days
+	visits_last_182_days
+	visits_last_92_days
+	total_site_visits
+
+	params: {'bootstrap': True, 'min_samples_leaf': 3, 'min_samples_split': 10, 'criterion': 'entropy'}
+
+
+	LinearSVC
+
+	no_returned_items
+	Refund
+	purchased_distinct
+	purchased_total
+	time_elapsed_since_last
+	no_of_orders
+	orders_last_182_days
+	orders_last_92_days
+	orders_last_31_days
+	visits_last_182_days
+	visits_last_92_days
+
+	params: {'class_weight': 'balanced', 'C': 0.1}
